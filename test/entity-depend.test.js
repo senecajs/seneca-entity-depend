@@ -35,6 +35,6 @@ function seneca_instance(config, plugin_options) {
     .test()
     .use('promisify')
     .use('entity')
-    .use('history')
+    .use('entity-history')
     .use(Plugin, plugin_options)
 }
