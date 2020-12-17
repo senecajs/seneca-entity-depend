@@ -2,9 +2,9 @@
 'use strict'
 
 const Lab = require('@hapi/lab')
-const Code = require('@hapi/code')
+// const Code = require('@hapi/code')
 const lab = (exports.lab = Lab.script())
-const expect = Code.expect
+// const expect = Code.expect
 
 const PluginValidator = require('seneca-plugin-validator')
 const Seneca = require('seneca')
@@ -35,6 +35,6 @@ function seneca_instance(config, plugin_options) {
     .test()
     .use('promisify')
     .use('entity')
-    .use('entity-history')
+    .use('entity-history', {ents: ['base:zed'],wait:true})
     .use(Plugin, plugin_options)
 }

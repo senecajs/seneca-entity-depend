@@ -2,7 +2,17 @@
 Handle dependency relationships on entity verison
 
 
+[![npm version](https://badge.fury.io/js/%40seneca%2Fentity-depend.svg)](https://badge.fury.io/js/%40seneca%2Fentity-depend)
+[!![Build](https://github.com/senecajs/seneca-entity-depend/workflows/build/badge.svg)](https://github.com/senecajs/seneca-entity-depend/actions?query=workflow%3Abuild)
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-entity-depend/badge.svg?branch=main)](https://coveralls.io/github/senecajs/seneca-entity-depend?branch=main)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0b1990c4264d66b01c50/maintainability)](https://codeclimate.com/github/senecajs/seneca-entity-depend/maintainability)
+[![DeepScan grade](https://deepscan.io/api/teams/5016/projects/14231/branches/259194/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=14231&bid=259194)
 
+
+
+## NOTE
+
+* Only works on _@seneca/entity-history_ enabled ents (as per `ent` option of _@seneca/entity-history_).
 
 
 ## Message Tutorial
@@ -91,7 +101,7 @@ See which fields are changed in parent and child.
 Pulls all changes from specified version. NOTE: uses _entity-history_ directly
 
 ```css
-> sys:entity,rig:history,entity:history,ent:{name:foo,id:`$.foo1`} => h0=out.items
+> sys:entity,rig:depend,entity:depend,ent:{name:foo,id:`$.foo1`} => h0=out.items
 > sys:entity,rig:depend,name:foo,pull:parent,child_id:`$.foo1c1.id`,
     parent_ver_id:`$.h0[0].id` => foo1c1=out
 ```
@@ -108,7 +118,7 @@ Pulls all changes from specified version. NOTE: uses _entity-history_ directly
 
 ## TODO:
 
-* Patterns should support `ent` parama as well as top level _base,name,id_.
+* Patterns should support `ent` param as well as top level _base,name,id_.
 * Support `make:parent`
 
 
