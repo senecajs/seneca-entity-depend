@@ -8,7 +8,6 @@ import { make_child_msg } from './lib/make_child_msg'
 
 /* $lab:coverage:on$ */
 
-
 // TODO: diff action
 
 module.exports = entity_depend
@@ -19,12 +18,9 @@ module.exports.doc = Doc
 function entity_depend(_options: any) {
   const seneca = this
 
-  seneca
-    .fix('sys:entity,rig:depend')
-    .message('make:child', make_child_msg)
+  seneca.fix('sys:entity,rig:depend').message('make:child', make_child_msg)
 
   return {
     name: 'entity-depend',
   }
 }
-

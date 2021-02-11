@@ -15,9 +15,7 @@ module.exports.errors = {};
 module.exports.doc = entity_depend_doc_1.default;
 function entity_depend(_options) {
     const seneca = this;
-    seneca
-        .fix('sys:entity,rig:depend')
-        .message('make:child', make_child_msg_1.make_child_msg);
+    seneca.fix('sys:entity,rig:depend').message('make:child', make_child_msg_1.make_child_msg);
     return {
         name: 'entity-depend',
     };

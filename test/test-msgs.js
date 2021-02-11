@@ -28,7 +28,7 @@ module.exports = {
         id: 'f01',
         x: 10,
         y: 'y01',
-        entity$: '-/zed/foo'
+        entity$: '-/zed/foo',
       },
     }),
 
@@ -43,25 +43,22 @@ module.exports = {
       out: {},
     }),
 
-    
     // make child
     LN({
       name: 'c01',
-      pattern:'make:child',
+      pattern: 'make:child',
       params: {
-        parent:'`f01:out`'
+        parent: '`f01:out`',
       },
       out: {
         ok: true,
-        child: {x:1},
-        parent: {x:1},
-      }
+        child: { x: 1 },
+        parent: { x: 1 },
+      },
     }),
-
 
     //{ pattern: 'role:mem-store,cmd:dump' },
 
-    
     LN({
       pattern: 'sys:entity,role:entity,cmd:save,base:zed,name:foo',
       params: {
@@ -76,7 +73,7 @@ module.exports = {
     }),
 
     // { pattern: 'role:mem-store,cmd:dump' },
-    
+
     /*
     LN({
       pattern: 'sys:entity,role:entity,cmd:save,base:zed,name:foo',
@@ -97,6 +94,6 @@ module.exports = {
     // preview PR
     // change child again
     // preview PR
-*/    
+*/
   ],
 }
