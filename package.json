@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -d",
     "watch": "tsc -w -d",
-    "test": "lab -v -P test -t 90 -L --sourcemaps --transform node_modules/lab-transform-typescript -I @@any-promise/REGISTRATION -r console -o stdout -r html -o test/coverage.html -r lcov -o test/lcov.info",
+    "test": "lab -v -P test -t 70 -L --sourcemaps --transform node_modules/lab-transform-typescript -I @@any-promise/REGISTRATION -r console -o stdout -r html -o test/coverage.html -r lcov -o test/lcov.info",
     "test-some": "lab -v -P test --sourcemaps --transform node_modules/lab-transform-typescript -I @@any-promise/REGISTRATION -g",
     "prettier": "prettier --write --no-semi --single-quote *.ts test/*.js",
     "doc": "seneca-doc",
@@ -32,14 +32,14 @@
     "@hapi/code": "^8.0.2",
     "@hapi/lab": "^24.1.0",
     "@seneca/doc": "^4.0.1",
-    "@seneca/entity-history": "^0.2.1",
+    "@seneca/entity-history": "^0.3.0",
     "lab-transform-typescript": "^3.0.1",
     "prettier": "^2.2.1",
-    "seneca": "^3.23.1",
-    "seneca-entity": "^12.0.0",
-    "seneca-msg-test": "^3.0.0",
+    "seneca": "^3.23.2",
+    "seneca-entity": "^13.0.0",
+    "seneca-msg-test": "^3.1.0",
     "seneca-plugin-validator": "^0.6.1",
     "seneca-promisify": "^2.0.0",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.5"
   }
 }

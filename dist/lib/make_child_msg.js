@@ -21,7 +21,7 @@ function make_child_msg(msg) {
     return __awaiter(this, void 0, void 0, function* () {
         let seneca = this;
         let parent_id = yield intern_1.default.resolve_entity_id(seneca, msg, 'parent', { fail: true });
-        console.log('PARENT', parent_id, msg);
+        // console.log('PARENT', parent_id, msg)
         let parent_entity = msg.parent.entity$ || { base: msg.base, name: msg.name };
         let parent = yield seneca.entity(parent_entity).load$(parent_id);
         if (null == parent) {
@@ -40,7 +40,7 @@ function make_child_msg(msg) {
         child = yield child.save$();
         // TODO: replace with call to entity-history to handle missing versions etc
         let current_ver = yield seneca.entity('sys/entver').load$(parent_id);
-        console.log('CURRENT VER', current_ver);
+        // console.log('CURRENT VER', current_ver)
         // TODO: support who as per entity-history
         let entdep = seneca.entity('sys/entdep').data$({
             child_id: child.id,

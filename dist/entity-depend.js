@@ -5,14 +5,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-/* $lab:coverage:on$ */
 const entity_depend_doc_1 = __importDefault(require("./entity-depend-doc"));
 const make_child_msg_1 = require("./lib/make_child_msg");
+/* $lab:coverage:on$ */
+// TODO: diff action
 module.exports = entity_depend;
 module.exports.defaults = {};
 module.exports.errors = {};
 module.exports.doc = entity_depend_doc_1.default;
-function entity_depend(options) {
+function entity_depend(_options) {
     const seneca = this;
     seneca
         .fix('sys:entity,rig:depend')

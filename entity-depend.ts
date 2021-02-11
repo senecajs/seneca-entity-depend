@@ -2,19 +2,21 @@
 /* $lab:coverage:off$ */
 'use strict'
 
-/* $lab:coverage:on$ */
-
 import Doc from './entity-depend-doc'
 
 import { make_child_msg } from './lib/make_child_msg'
 
+/* $lab:coverage:on$ */
+
+
+// TODO: diff action
 
 module.exports = entity_depend
 module.exports.defaults = {}
 module.exports.errors = {}
 module.exports.doc = Doc
 
-function entity_depend(options: any) {
+function entity_depend(_options: any) {
   const seneca = this
 
   seneca

@@ -19,7 +19,7 @@ export async function make_child_msg(msg: {
     await intern.resolve_entity_id(seneca, msg, 'parent', { fail: true })
 
 
-  console.log('PARENT', parent_id, msg)
+  // console.log('PARENT', parent_id, msg)
 
   let parent_entity = msg.parent.entity$ || { base: msg.base, name: msg.name }
 
@@ -46,7 +46,7 @@ export async function make_child_msg(msg: {
 
   // TODO: replace with call to entity-history to handle missing versions etc
   let current_ver = await seneca.entity('sys/entver').load$(parent_id)
-  console.log('CURRENT VER', current_ver)
+  // console.log('CURRENT VER', current_ver)
 
   // TODO: support who as per entity-history
   let entdep = seneca.entity('sys/entdep').data$({
