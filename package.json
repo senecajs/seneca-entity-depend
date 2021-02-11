@@ -1,6 +1,6 @@
 {
   "name": "@seneca/entity-depend",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "dist/entity-depend.js",
   "types": "dist/entity-depend.d.ts",

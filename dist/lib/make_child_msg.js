@@ -42,7 +42,7 @@ function make_child_msg(msg) {
         let current_ver = yield seneca.entity('sys/entver').load$(parent_id);
         // console.log('CURRENT VER', current_ver)
         // TODO: support who as per entity-history
-        let entdep = seneca.entity('sys/entdep').data$({
+        let entdep = yield seneca.entity('sys/entdep').data$({
             child_id: child.id,
             parent_id: parent.id,
             parent_ver_id: current_ver.ver_id,

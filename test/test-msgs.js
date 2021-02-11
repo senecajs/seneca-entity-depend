@@ -54,6 +54,7 @@ module.exports = {
         ok: true,
         child: { x: 1 },
         parent: { x: 1 },
+        entdep: { base: 'zed', name: 'foo', parent_id: '`f01:out.id`' },
       },
     }),
 

@@ -49,7 +49,7 @@ export async function make_child_msg(msg: {
   // console.log('CURRENT VER', current_ver)
 
   // TODO: support who as per entity-history
-  let entdep = seneca.entity('sys/entdep').data$({
+  let entdep = await seneca.entity('sys/entdep').data$({
     child_id: child.id,
     parent_id: parent.id,
     parent_ver_id: current_ver.ver_id,
