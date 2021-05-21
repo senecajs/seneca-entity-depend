@@ -58,6 +58,7 @@ async function make_child_msg(msg) {
         }
     }
     child = await child.save$();
+    console.log('MAKE CHILD', child, parent);
     let current_ver = await intern_1.default.ensure_version(seneca, parent);
     // console.log('CV', current_ver)
     // TODO: support who as per entity-history

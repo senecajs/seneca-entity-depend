@@ -95,7 +95,9 @@ export async function make_child_msg(this: any, msg: {
 
 
   child = await child.save$()
+  console.log('MAKE CHILD', child, parent)
 
+  
   let current_ver: any = await intern.ensure_version(seneca, parent)
 
   // console.log('CV', current_ver)
