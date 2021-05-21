@@ -34,8 +34,13 @@ const intern = {
 
   // Look up entity by unique field value (say user.email)
   // Depends on seneca-promisify
-  async resolve_entity_id(seneca: any, msg: any, name: string, opts?: any): Promise<string> {
-    let id = intern.parse_entity_id(seneca, msg, name, { ...opts, fail: false })
+  async resolve_entity_id(
+    seneca: any,
+    msg: any,
+    name: string,
+    opts?: any
+  ): Promise<string> {
+    let id = intern.parse_entity_id(seneca, msg, name, { fail: false, ...opts })
 
     let field = null
     let value = null
@@ -66,7 +71,38 @@ const intern = {
     }
 
     return id
+  },
+
+
+  async ensure_version(seneca: any, parent: any) {
+    let canon = parent.canon$({ object: true })
+
+    let cvmsg = {
+      sys: 'entity',
+      rig: 'history',
+      entity: 'load',
+      ent: {
+        ent_id: parent.id,
+        name: canon.name,
+        base: canon.base,
+      }
+    }
+    let current_ver = await seneca.post(cvmsg)
+    // console.log('CURRENT VER', current_ver)
+
+    // If no current_ver save parent to get it
+    if (!current_ver.ok) {
+      await parent.save$()
+      current_ver = await seneca.post(cvmsg)
+    }
+
+    if (!current_ver.ok) {
+      return seneca.fail('no-current-version', { parent })
+    }
+
+    return current_ver.entver
   }
+
 }
 
 export default intern

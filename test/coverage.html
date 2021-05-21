@@ -544,11 +544,11 @@
             <a href="#dist/entity-depend.js"><span class="dirname">dist/</span><span class="basename">entity-depend.js</span></a>
         </li>
         <li class="generated">
-            <span class="cov medium">68.52</span>
+            <span class="cov medium">70.77</span>
             <a href="#dist/lib/intern.js"><span class="dirname">dist/lib/</span><span class="basename">intern.js</span></a>
         </li>
         <li class="generated">
-            <span class="cov high">83.64</span>
+            <span class="cov high">91.30</span>
             <a href="#dist/lib/make_child_msg.js"><span class="dirname">dist/lib/</span><span class="basename">make_child_msg.js</span></a>
         </li>
         <li><a href="#linting">Linting Report</a></li>
@@ -559,7 +559,7 @@
           <div class="failures">0</div>
           <div class="skipped">0</div>
           <div class="test-count">4</div>
-          <div class="duration">1228</div>
+          <div class="duration">1196</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -582,28 +582,28 @@
               <td class="test-title">validate
                   
               </td>
-              <td class="test-duration">21</td>
+              <td class="test-duration">22</td>
           </tr>
           <tr class="show  success">
               <td class="test-id">2</td>
               <td class="test-title">plugin-load
                   
               </td>
-              <td class="test-duration">492</td>
+              <td class="test-duration">251</td>
           </tr>
           <tr class="show  success">
               <td class="test-id">3</td>
               <td class="test-title">happy
                   
               </td>
-              <td class="test-duration">271</td>
+              <td class="test-duration">165</td>
           </tr>
           <tr class="show  success">
               <td class="test-id">4</td>
               <td class="test-title">messages
                   
               </td>
-              <td class="test-duration">426</td>
+              <td class="test-duration">745</td>
           </tr>
           </tbody>
       </table>
@@ -611,10 +611,10 @@
     </div>    <div id="coverage">
         <h1>Code Coverage Report</h1>
         <div class="stats high">
-            <div class="percentage">80.60%</div>
-            <div class="sloc">134</div>
-            <div class="hits">108</div>
-            <div class="misses">26</div>
+            <div class="percentage">84.28%</div>
+            <div class="sloc">159</div>
+            <div class="hits">134</div>
+            <div class="misses">25</div>
         </div>
         <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="generated" id="show-generated">
@@ -854,10 +854,10 @@
             <div class="file show generated">
                 <h2 id="dist/lib/intern.js">dist/lib/intern.js </h2>
                 <div class="stats medium">
-                    <div class="percentage">68.52%</div>
-                    <div class="sloc">54</div>
-                    <div class="hits">37</div>
-                    <div class="misses">17</div>
+                    <div class="percentage">70.77%</div>
+                    <div class="sloc">65</div>
+                    <div class="hits">46</div>
+                    <div class="misses">19</div>
                 </div>
                 <table>
                     <thead>
@@ -892,376 +892,454 @@
                           <td class="line" data-tooltip>4</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">var __awaiter &#x3D; (this &amp;&amp; this.__awaiter) || function (thisArg, _arguments, P, generator) {</td>
+                          <td class="source">Object.defineProperty(exports, &quot;__esModule&quot;, { value: true });</td>
                           
                         </tr>            <tr id="dist/lib/intern.js__5" class="hit">
                           <td class="line" data-tooltip>5</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__6" class="hit">
-                          <td class="line" data-tooltip>6</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">    return new (P || (P &#x3D; Promise))(function (resolve, reject) {</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__7" class="hit">
-                          <td class="line" data-tooltip>7</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__8" class="hit">
-                          <td class="line" data-tooltip>8</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        function rejected(value) { try { step(generator[&quot;throw&quot;](value)); } catch (e) { reject(e); } }</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__9" class="hit">
-                          <td class="line" data-tooltip>9</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__10" class="hit">
-                          <td class="line" data-tooltip>10</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        step((generator &#x3D; generator.apply(thisArg, _arguments || [])).next());</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__11" class="hit">
-                          <td class="line" data-tooltip>11</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">    });</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__12" class="hit">
-                          <td class="line" data-tooltip>12</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">};</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__13" class="hit">
-                          <td class="line" data-tooltip>13</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">Object.defineProperty(exports, &quot;__esModule&quot;, { value: true });</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__14" class="hit">
-                          <td class="line" data-tooltip>14</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
                           <td class="source">/* $lab:coverage:on$ */</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__5">5</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__15" class="hit">
-                          <td class="line" data-tooltip>15</td>
+                        </tr>            <tr id="dist/lib/intern.js__6" class="hit">
+                          <td class="line" data-tooltip>6</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip>1</td>
                           <td class="source">const intern &#x3D; {</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__8">8</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__16" class="hit">
-                          <td class="line" data-tooltip>16</td>
+                        </tr>            <tr id="dist/lib/intern.js__7" class="hit">
+                          <td class="line" data-tooltip>7</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    // TODO: move this to entity/util export</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__10">10</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__17" class="hit">
-                          <td class="line" data-tooltip>17</td>
+                        </tr>            <tr id="dist/lib/intern.js__8" class="hit">
+                          <td class="line" data-tooltip>8</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    // TODO: parse prefix &#x3D;&gt; always pure and sync, resolve prefix &#x3D;&gt; async</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__11">11</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__18" class="hit">
-                          <td class="line" data-tooltip>18</td>
+                        </tr>            <tr id="dist/lib/intern.js__9" class="hit">
+                          <td class="line" data-tooltip>9</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    // Search precendence: name_id: string, name_id: entity, name: string, name: entity</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__12">12</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__19" class="hit">
-                          <td class="line" data-tooltip>19</td>
+                        </tr>            <tr id="dist/lib/intern.js__10" class="hit">
+                          <td class="line" data-tooltip>10</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    parse_entity_id(seneca, msg, name, opts) {</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__13">13</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__20" class="hit">
-                          <td class="line" data-tooltip>20</td>
+                        </tr>            <tr id="dist/lib/intern.js__11" class="hit">
+                          <td class="line" data-tooltip>11</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">        let id &#x3D; msg[name + &#x27;_id&#x27;];</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__14">14</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__21" class="chunks">
-                          <td class="line" data-tooltip>21</td>
+                        </tr>            <tr id="dist/lib/intern.js__12" class="chunks">
+                          <td class="line" data-tooltip>12</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source"><div>        if (</div><div class="miss false" data-tooltip>null !&#x3D; id</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div>) {</div></td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__16">16</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__22" class="miss">
-                          <td class="line" data-tooltip>22</td>
+                        </tr>            <tr id="dist/lib/intern.js__13" class="miss">
+                          <td class="line" data-tooltip>13</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source" data-tooltip>            id &#x3D; id.id;</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__17">17</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__14" class="hit">
+                          <td class="line" data-tooltip>14</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__18">18</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__15" class="chunks">
+                          <td class="line" data-tooltip>15</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if (</div><div class="miss true" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__20">20</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__16" class="hit">
+                          <td class="line" data-tooltip>16</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">            id &#x3D; msg[name];</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__21">21</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__17" class="hit">
+                          <td class="line" data-tooltip>17</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__22">22</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__18" class="chunks">
+                          <td class="line" data-tooltip>18</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if (</div><div class="miss true" data-tooltip>null !&#x3D; id</div><div> &amp;&amp; &#x27;string&#x27; !&#x3D; typeof (id)) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__24">24</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__19" class="hit">
+                          <td class="line" data-tooltip>19</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">            id &#x3D; id.id;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__25">25</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__20" class="hit">
+                          <td class="line" data-tooltip>20</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__26">26</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__21" class="chunks">
+                          <td class="line" data-tooltip>21</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.fail</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__28">28</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__22" class="miss">
+                          <td class="line" data-tooltip>22</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source" data-tooltip>            return seneca.fail(&#x27;missing-entity-id&#x27;, { name: name });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__29">29</a></td>
                         </tr>            <tr id="dist/lib/intern.js__23" class="hit">
                           <td class="line" data-tooltip>23</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__18">18</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__24" class="chunks">
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__30">30</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__24" class="hit">
                           <td class="line" data-tooltip>24</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        if (</div><div class="miss true" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__20">20</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__25" class="hit">
-                          <td class="line" data-tooltip>25</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">            id &#x3D; msg[name];</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__21">21</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__26" class="hit">
-                          <td class="line" data-tooltip>26</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__22">22</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__27" class="chunks">
-                          <td class="line" data-tooltip>27</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        if (</div><div class="miss true" data-tooltip>null !&#x3D; id</div><div> &amp;&amp; </div><div class="miss true" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__24">24</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__28" class="hit">
-                          <td class="line" data-tooltip>28</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">            id &#x3D; id.id;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__25">25</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__29" class="hit">
-                          <td class="line" data-tooltip>29</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__26">26</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__30" class="chunks">
-                          <td class="line" data-tooltip>30</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.fail</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__28">28</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__31" class="miss">
-                          <td class="line" data-tooltip>31</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>            return seneca.fail(&#x27;missing-entity-id&#x27;, { name: name });</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__29">29</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__32" class="hit">
-                          <td class="line" data-tooltip>32</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__30">30</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__33" class="hit">
-                          <td class="line" data-tooltip>33</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
+                          <td class="hits" data-tooltip>11</td>
                           <td class="source">        return id;</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__32">32</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__34" class="hit">
-                          <td class="line" data-tooltip>34</td>
+                        </tr>            <tr id="dist/lib/intern.js__25" class="hit">
+                          <td class="line" data-tooltip>25</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    },</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__33">33</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__35" class="hit">
-                          <td class="line" data-tooltip>35</td>
+                        </tr>            <tr id="dist/lib/intern.js__26" class="hit">
+                          <td class="line" data-tooltip>26</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    // Look up entity by unique field value (say user.email)</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__35">35</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__36" class="hit">
-                          <td class="line" data-tooltip>36</td>
+                        </tr>            <tr id="dist/lib/intern.js__27" class="hit">
+                          <td class="line" data-tooltip>27</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">    // Depends on seneca-promisify</td>
                           <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__36">36</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__37" class="hit">
+                        </tr>            <tr id="dist/lib/intern.js__28" class="hit">
+                          <td class="line" data-tooltip>28</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    async resolve_entity_id(seneca, msg, name, opts) {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__41">41</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__29" class="hit">
+                          <td class="line" data-tooltip>29</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        let id &#x3D; intern.parse_entity_id(seneca, msg, name, { fail: false, ...opts });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__43">43</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__30" class="hit">
+                          <td class="line" data-tooltip>30</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        let field &#x3D; null;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__45">45</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__31" class="hit">
+                          <td class="line" data-tooltip>31</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        let value &#x3D; null;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__46">46</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__32" class="hit">
+                          <td class="line" data-tooltip>32</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        // unique lookup field value provided by param format: name_field</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__48">48</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__33" class="chunks">
+                          <td class="line" data-tooltip>33</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.entity</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__49">49</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__34" class="hit">
+                          <td class="line" data-tooltip>34</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">            // Assume this is the only such field</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__51">51</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__35" class="miss">
+                          <td class="line" data-tooltip>35</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source" data-tooltip>            let name_prefix &#x3D; name + &#x27;_&#x27;;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__52">52</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__36" class="miss">
+                          <td class="line" data-tooltip>36</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source" data-tooltip>            let param &#x3D; Object.keys(msg).find(p &#x3D;&gt; p.startsWith(name_prefix));</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__53">53</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__37" class="miss">
                           <td class="line" data-tooltip>37</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    resolve_entity_id(seneca, msg, name, opts) {</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__37">37</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__38" class="hit">
+                          <td class="source" data-tooltip>            if (null !&#x3D; param) {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__55">55</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__38" class="miss">
                           <td class="line" data-tooltip>38</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        return __awaiter(this, void 0, void 0, function* () {</td>
-                          
-                        </tr>            <tr id="dist/lib/intern.js__39" class="hit">
+                          <td class="source" data-tooltip>                field &#x3D; param.substring(name_prefix.length);</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__56">56</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__39" class="miss">
                           <td class="line" data-tooltip>39</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            let id &#x3D; intern.parse_entity_id(seneca, msg, name, Object.assign(Object.assign({}, opts), { fail: false }));</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__38">38</a></td>
+                          <td class="source" data-tooltip>                value &#x3D; msg[param];</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__57">57</a></td>
                         </tr>            <tr id="dist/lib/intern.js__40" class="hit">
                           <td class="line" data-tooltip>40</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">            let field &#x3D; null;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__40">40</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__41" class="hit">
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">                // Assume it identifies a unique entity        </td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__58">58</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__41" class="miss">
                           <td class="line" data-tooltip>41</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">            let value &#x3D; null;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__41">41</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source" data-tooltip>                let ent &#x3D; await seneca.entity(opts.entity)</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__59">59</a></td>
                         </tr>            <tr id="dist/lib/intern.js__42" class="hit">
                           <td class="line" data-tooltip>42</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            // unique lookup field value provided by param format: name_field</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__43">43</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__43" class="chunks">
+                          <td class="source">                    .load$({ q: { [field]: value } });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__60">60</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__43" class="miss">
                           <td class="line" data-tooltip>43</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>            if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.entity</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__44">44</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__44" class="hit">
+                          <td class="source" data-tooltip>                if (ent) {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__62">62</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__44" class="miss">
                           <td class="line" data-tooltip>44</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                // Assume this is the only such field</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__46">46</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__45" class="miss">
+                          <td class="source" data-tooltip>                    id &#x3D; ent.id;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__63">63</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__45" class="hit">
                           <td class="line" data-tooltip>45</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                let name_prefix &#x3D; name + &#x27;_&#x27;;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__47">47</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__46" class="miss">
+                          <td class="source">                }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__64">64</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__46" class="hit">
                           <td class="line" data-tooltip>46</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                let param &#x3D; Object.keys(msg).find(p &#x3D;&gt; p.startsWith(name_prefix));</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__48">48</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__47" class="miss">
+                          <td class="source">            }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__65">65</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__47" class="hit">
                           <td class="line" data-tooltip>47</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                if (null !&#x3D; param) {</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__50">50</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__48" class="miss">
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__66">66</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__48" class="chunks">
                           <td class="line" data-tooltip>48</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                    field &#x3D; param.substring(name_prefix.length);</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__51">51</a></td>
+                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.fail</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__68">68</a></td>
                         </tr>            <tr id="dist/lib/intern.js__49" class="miss">
                           <td class="line" data-tooltip>49</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                    value &#x3D; msg[param];</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__52">52</a></td>
+                          <td class="source" data-tooltip>            return seneca.fail(&#x27;missing-entity-id-field&#x27;, { name: name, field: field, value: value });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__70">70</a></td>
                         </tr>            <tr id="dist/lib/intern.js__50" class="hit">
                           <td class="line" data-tooltip>50</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                    // Assume it identifies a unique entity        </td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__53">53</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__51" class="miss">
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__71">71</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__51" class="hit">
                           <td class="line" data-tooltip>51</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                    let ent &#x3D; yield seneca.entity(opts.entity)</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__54">54</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        return id;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__73">73</a></td>
                         </tr>            <tr id="dist/lib/intern.js__52" class="hit">
                           <td class="line" data-tooltip>52</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                        .load$({ q: { [field]: value } });</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__55">55</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__53" class="miss">
+                          <td class="source">    },</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__74">74</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__53" class="hit">
                           <td class="line" data-tooltip>53</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                    if (ent) {</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__57">57</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__54" class="miss">
+                          <td class="source">    async ensure_version(seneca, parent) {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__77">77</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__54" class="hit">
                           <td class="line" data-tooltip>54</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                        id &#x3D; ent.id;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__58">58</a></td>
+                          <td class="source">        let canon &#x3D; parent.canon$({ object: true });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__78">78</a></td>
                         </tr>            <tr id="dist/lib/intern.js__55" class="hit">
                           <td class="line" data-tooltip>55</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">                    }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__59">59</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        let cvmsg &#x3D; {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__80">80</a></td>
                         </tr>            <tr id="dist/lib/intern.js__56" class="hit">
                           <td class="line" data-tooltip>56</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__60">60</a></td>
+                          <td class="source">            sys: &#x27;entity&#x27;,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__81">81</a></td>
                         </tr>            <tr id="dist/lib/intern.js__57" class="hit">
                           <td class="line" data-tooltip>57</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__61">61</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__58" class="chunks">
+                          <td class="source">            rig: &#x27;history&#x27;,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__82">82</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__58" class="hit">
                           <td class="line" data-tooltip>58</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>            if (</div><div class="miss false" data-tooltip>&#x27;string&#x27; !&#x3D; typeof (id)</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts</div><div> &amp;&amp; </div><div class="miss never" data-tooltip>opts.fail</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__63">63</a></td>
-                        </tr>            <tr id="dist/lib/intern.js__59" class="miss">
+                          <td class="source">            entity: &#x27;load&#x27;,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__83">83</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__59" class="hit">
                           <td class="line" data-tooltip>59</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                return seneca.fail(&#x27;missing-entity-id-field&#x27;, { name: name, field: field, value: value });</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__65">65</a></td>
+                          <td class="source">            ent: {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__84">84</a></td>
                         </tr>            <tr id="dist/lib/intern.js__60" class="hit">
                           <td class="line" data-tooltip>60</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__66">66</a></td>
+                          <td class="source">                ent_id: parent.id,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__85">85</a></td>
                         </tr>            <tr id="dist/lib/intern.js__61" class="hit">
                           <td class="line" data-tooltip>61</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">            return id;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__68">68</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">                name: canon.name,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__86">86</a></td>
                         </tr>            <tr id="dist/lib/intern.js__62" class="hit">
                           <td class="line" data-tooltip>62</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        });</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__69">69</a></td>
+                          <td class="source">                base: canon.base,</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__87">87</a></td>
                         </tr>            <tr id="dist/lib/intern.js__63" class="hit">
                           <td class="line" data-tooltip>63</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    }</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__69">69</a></td>
+                          <td class="source">            }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__88">88</a></td>
                         </tr>            <tr id="dist/lib/intern.js__64" class="hit">
                           <td class="line" data-tooltip>64</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">};</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__70">70</a></td>
+                          <td class="source">        };</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__89">89</a></td>
                         </tr>            <tr id="dist/lib/intern.js__65" class="hit">
                           <td class="line" data-tooltip>65</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">exports.default &#x3D; intern;</td>
-                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__72">72</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        let current_ver &#x3D; await seneca.post(cvmsg);</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__90">90</a></td>
                         </tr>            <tr id="dist/lib/intern.js__66" class="hit">
                           <td class="line" data-tooltip>66</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        // console.log(&#x27;CURRENT VER&#x27;, current_ver)</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__91">91</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__67" class="hit">
+                          <td class="line" data-tooltip>67</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        // If no current_ver save parent to get it</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__93">93</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__68" class="hit">
+                          <td class="line" data-tooltip>68</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        if (!current_ver.ok) {</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__94">94</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__69" class="hit">
+                          <td class="line" data-tooltip>69</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>8</td>
+                          <td class="source">            await parent.save$();</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__95">95</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__70" class="hit">
+                          <td class="line" data-tooltip>70</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>8</td>
+                          <td class="source">            current_ver &#x3D; await seneca.post(cvmsg);</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__96">96</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__71" class="hit">
+                          <td class="line" data-tooltip>71</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__97">97</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__72" class="chunks">
+                          <td class="line" data-tooltip>72</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>!current_ver.ok</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__99">99</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__73" class="miss">
+                          <td class="line" data-tooltip>73</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source" data-tooltip>            return seneca.fail(&#x27;no-current-version&#x27;, { parent });</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__100">100</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__74" class="hit">
+                          <td class="line" data-tooltip>74</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__101">101</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__75" class="hit">
+                          <td class="line" data-tooltip>75</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">        return current_ver.entver;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__103">103</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__76" class="hit">
+                          <td class="line" data-tooltip>76</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__104">104</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__77" class="hit">
+                          <td class="line" data-tooltip>77</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">};</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__106">106</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__78" class="hit">
+                          <td class="line" data-tooltip>78</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">exports.default &#x3D; intern;</td>
+                          <td class="original-line" data-tooltip="../../lib/intern.ts"><a href="#../../lib/intern.ts__108">108</a></td>
+                        </tr>            <tr id="dist/lib/intern.js__79" class="hit">
+                          <td class="line" data-tooltip>79</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">//# sourceMappingURL&#x3D;intern.js.map</td>
@@ -1272,10 +1350,10 @@
             <div class="file show generated">
                 <h2 id="dist/lib/make_child_msg.js">dist/lib/make_child_msg.js </h2>
                 <div class="stats high">
-                    <div class="percentage">83.64%</div>
-                    <div class="sloc">55</div>
-                    <div class="hits">46</div>
-                    <div class="misses">9</div>
+                    <div class="percentage">91.30%</div>
+                    <div class="sloc">69</div>
+                    <div class="hits">63</div>
+                    <div class="misses">6</div>
                 </div>
                 <table>
                     <thead>
@@ -1310,358 +1388,466 @@
                           <td class="line" data-tooltip>4</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">var __awaiter &#x3D; (this &amp;&amp; this.__awaiter) || function (thisArg, _arguments, P, generator) {</td>
+                          <td class="source">var __importDefault &#x3D; (this &amp;&amp; this.__importDefault) || function (mod) {</td>
                           
                         </tr>            <tr id="dist/lib/make_child_msg.js__5" class="hit">
                           <td class="line" data-tooltip>5</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }</td>
+                          <td class="source">    return (mod &amp;&amp; mod.__esModule) ? mod : { &quot;default&quot;: mod };</td>
                           
                         </tr>            <tr id="dist/lib/make_child_msg.js__6" class="hit">
                           <td class="line" data-tooltip>6</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    return new (P || (P &#x3D; Promise))(function (resolve, reject) {</td>
+                          <td class="source">};</td>
                           
                         </tr>            <tr id="dist/lib/make_child_msg.js__7" class="hit">
                           <td class="line" data-tooltip>7</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }</td>
+                          <td class="source">Object.defineProperty(exports, &quot;__esModule&quot;, { value: true });</td>
                           
                         </tr>            <tr id="dist/lib/make_child_msg.js__8" class="hit">
                           <td class="line" data-tooltip>8</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        function rejected(value) { try { step(generator[&quot;throw&quot;](value)); } catch (e) { reject(e); } }</td>
+                          <td class="source">exports.make_child_msg &#x3D; void 0;</td>
                           
                         </tr>            <tr id="dist/lib/make_child_msg.js__9" class="hit">
                           <td class="line" data-tooltip>9</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }</td>
-                          
+                          <td class="source">const intern_1 &#x3D; __importDefault(require(&quot;./intern&quot;));</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__5">5</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__10" class="hit">
                           <td class="line" data-tooltip>10</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        step((generator &#x3D; generator.apply(thisArg, _arguments || [])).next());</td>
-                          
+                          <td class="source">/* $lab:coverage:on$ */</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__7">7</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__11" class="hit">
                           <td class="line" data-tooltip>11</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    });</td>
-                          
+                          <td class="source">async function make_child_msg(msg) {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__28">28</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__12" class="hit">
                           <td class="line" data-tooltip>12</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">};</td>
-                          
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let seneca &#x3D; this;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__29">29</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__13" class="hit">
                           <td class="line" data-tooltip>13</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">var __importDefault &#x3D; (this &amp;&amp; this.__importDefault) || function (mod) {</td>
-                          
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let parent_id &#x3D; await intern_1.default.resolve_entity_id(seneca, msg, &#x27;parent&#x27;, { fail: true });</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__32">32</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__14" class="hit">
                           <td class="line" data-tooltip>14</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">    return (mod &amp;&amp; mod.__esModule) ? mod : { &quot;default&quot;: mod };</td>
-                          
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let parent_entity_spec &#x3D; msg.parent.entity$ || { base$: msg.base, name$: msg.name };</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__34">34</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__15" class="hit">
                           <td class="line" data-tooltip>15</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">};</td>
-                          
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let parent_entity &#x3D; seneca.entity(parent_entity_spec);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__35">35</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__16" class="hit">
                           <td class="line" data-tooltip>16</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">Object.defineProperty(exports, &quot;__esModule&quot;, { value: true });</td>
-                          
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let parent_entity2 &#x3D; seneca.make(parent_entity_spec);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__36">36</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__17" class="hit">
                           <td class="line" data-tooltip>17</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">exports.make_child_msg &#x3D; void 0;</td>
-                          
+                          <td class="source">    // console.log(&#x27;PARENT&#x27;, parent_id, parent_entity_spec, parent_entity, parent_entity2, msg)</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__38">38</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__18" class="hit">
                           <td class="line" data-tooltip>18</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">const intern_1 &#x3D; __importDefault(require(&quot;./intern&quot;));</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__5">5</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__19" class="hit">
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let parent &#x3D; await parent_entity.load$(parent_id);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__40">40</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__19" class="chunks">
                           <td class="line" data-tooltip>19</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">/* $lab:coverage:on$ */</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__7">7</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__20" class="hit">
+                          <td class="source"><div>    if (</div><div class="miss false" data-tooltip>null &#x3D;&#x3D; parent</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__42">42</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__20" class="miss">
                           <td class="line" data-tooltip>20</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">function make_child_msg(msg) {</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__15">15</a></td>
+                          <td class="source" data-tooltip>        return seneca.fail(&#x27;parent-not-found&#x27;);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__43">43</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__21" class="hit">
                           <td class="line" data-tooltip>21</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">    return __awaiter(this, void 0, void 0, function* () {</td>
-                          
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__44">44</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__22" class="hit">
                           <td class="line" data-tooltip>22</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        let seneca &#x3D; this;</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__16">16</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let child &#x3D; parent.clone$();</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__47">47</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__23" class="hit">
                           <td class="line" data-tooltip>23</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        let parent_id &#x3D; yield intern_1.default.resolve_entity_id(seneca, msg, &#x27;parent&#x27;, { fail: true });</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__19">19</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__24" class="hit">
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    delete child.id;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__48">48</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__24" class="chunks">
                           <td class="line" data-tooltip>24</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        // console.log(&#x27;PARENT&#x27;, parent_id, msg)</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__22">22</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__25" class="chunks">
+                          <td class="source"><div>    if (msg.child &amp;&amp; </div><div class="miss true" data-tooltip>null !&#x3D; msg.child.id$</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__50">50</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__25" class="hit">
                           <td class="line" data-tooltip>25</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        let parent_entity &#x3D; </div><div class="miss true" data-tooltip>msg.parent.entity$</div><div> || </div><div class="miss never" data-tooltip>{ base: msg.base, name: msg.name }</div><div>;</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__24">24</a></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">        child.id$ &#x3D; msg.child.id$;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__51">51</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__26" class="hit">
                           <td class="line" data-tooltip>26</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        let parent &#x3D; yield seneca.entity(parent_entity).load$(parent_id);</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__26">26</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__27" class="chunks">
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__52">52</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__27" class="hit">
                           <td class="line" data-tooltip>27</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>null &#x3D;&#x3D; parent</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__28">28</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__28" class="miss">
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    if (msg.replace) {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__55">55</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__28" class="hit">
                           <td class="line" data-tooltip>28</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>            return seneca.fail(&#x27;parent-not-found&#x27;);</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__29">29</a></td>
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">        Object.keys(msg.replace).forEach(fn &#x3D;&gt; {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__56">56</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__29" class="hit">
                           <td class="line" data-tooltip>29</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__30">30</a></td>
+                          <td class="source">            let rval &#x3D; msg.replace[fn];</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__57">57</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__30" class="hit">
                           <td class="line" data-tooltip>30</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        let child &#x3D; parent.clone$();</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__33">33</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">            // TODO: function won&#x27;t work over network - provide an option for named</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__59">59</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__31" class="hit">
                           <td class="line" data-tooltip>31</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        delete child.id;</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__34">34</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__32" class="chunks">
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">            // functions defined in options</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__60">60</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__32" class="hit">
                           <td class="line" data-tooltip>32</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>        if (</div><div class="miss false" data-tooltip>msg.replace</div><div>) {</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__36">36</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__33" class="miss">
+                          <td class="hits" data-tooltip>10</td>
+                          <td class="source">            child[fn] &#x3D;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__61">61</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__33" class="chunks">
                           <td class="line" data-tooltip>33</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>            Object.keys(msg.replace).forEach(fn &#x3D;&gt; {</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__37">37</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__34" class="chunks">
+                          <td class="source"><div>                </div><div class="miss false" data-tooltip>&#x27;function&#x27; &#x3D;&#x3D;&#x3D; typeof (&#x27;rval&#x27;)</div><div> ? </div><div class="miss never" data-tooltip>rval(fn, child, parent, msg)</div><div> :</div></td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__62">62</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__34" class="hit">
                           <td class="line" data-tooltip>34</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>                </div><div class="miss never" data-tooltip>let rval &#x3D; msg.replace[fn];</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__38">38</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__35" class="miss">
+                          <td class="source">                    rval;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__63">63</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__35" class="hit">
                           <td class="line" data-tooltip>35</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                child[fn] &#x3D;</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__39">39</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__36" class="chunks">
+                          <td class="source">        });</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__64">64</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__36" class="hit">
                           <td class="line" data-tooltip>36</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>                    </div><div class="miss never" data-tooltip>&#x27;function&#x27; &#x3D;&#x3D;&#x3D; typeof (&#x27;rval&#x27;)</div><div> ? </div><div class="miss never" data-tooltip>rval(fn, child, parent, msg)</div><div> :</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__40">40</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__37" class="chunks">
+                          <td class="source">    }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__65">65</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__37" class="hit">
                           <td class="line" data-tooltip>37</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>                        </div><div class="miss never" data-tooltip>rval</div><div>;</div></td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__41">41</a></td>
+                          <td class="source">    // TODO: also copy referents</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__68">68</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__38" class="hit">
                           <td class="line" data-tooltip>38</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">            });</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__42">42</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    if (msg.referents) {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__69">69</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__39" class="hit">
                           <td class="line" data-tooltip>39</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        }</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__43">43</a></td>
+                          <td class="source">        for (let [field, referent] of Object.entries(msg.referents)) {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__70">70</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__40" class="hit">
                           <td class="line" data-tooltip>40</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        child &#x3D; yield child.save$();</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__45">45</a></td>
+                          <td class="hits" data-tooltip>8</td>
+                          <td class="source">            if (null !&#x3D; child[field]) {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__71">71</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__41" class="hit">
                           <td class="line" data-tooltip>41</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">        // TODO: replace with call to entity-history to handle missing versions etc</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__47">47</a></td>
+                          <td class="hits" data-tooltip>5</td>
+                          <td class="source">                let refmsg &#x3D; {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__72">72</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__42" class="hit">
                           <td class="line" data-tooltip>42</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        let current_ver &#x3D; yield seneca.entity(&#x27;sys/entver&#x27;).load$(parent_id);</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__48">48</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">                    parent: child[field],</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__73">73</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__43" class="hit">
                           <td class="line" data-tooltip>43</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        // console.log(&#x27;CURRENT VER&#x27;, current_ver)</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__49">49</a></td>
+                          <td class="source">                    base: referent.base,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__74">74</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__44" class="hit">
                           <td class="line" data-tooltip>44</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        // TODO: support who as per entity-history</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__51">51</a></td>
+                          <td class="source">                    name: referent.name,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__75">75</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__45" class="hit">
                           <td class="line" data-tooltip>45</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        let entdep &#x3D; yield seneca.entity(&#x27;sys/entdep&#x27;).data$({</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__52">52</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">                    replace: referent.replace,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__76">76</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__46" class="hit">
                           <td class="line" data-tooltip>46</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            child_id: child.id,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__53">53</a></td>
+                          <td class="source">                    child: referent.child,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__77">77</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__47" class="hit">
                           <td class="line" data-tooltip>47</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            parent_id: parent.id,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__54">54</a></td>
+                          <td class="source">                };</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__78">78</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__48" class="hit">
                           <td class="line" data-tooltip>48</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            parent_ver_id: current_ver.ver_id,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__55">55</a></td>
+                          <td class="source">                // console.log(&#x27;REFERENT A&#x27;, child, refmsg)</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__79">79</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__49" class="hit">
                           <td class="line" data-tooltip>49</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">            parent_rtag: current_ver.ent_rtag,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__56">56</a></td>
+                          <td class="hits" data-tooltip>5</td>
+                          <td class="source">                let referent_child &#x3D; await seneca.post(&#x27;sys:entity,rig:depend,make:child&#x27;, refmsg);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__82">82</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__50" class="hit">
                           <td class="line" data-tooltip>50</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            base: current_ver.base,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__57">57</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__51" class="hit">
+                          <td class="source">                // console.log(&#x27;REFERENT B&#x27;, referent_child)</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__84">84</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__51" class="chunks">
                           <td class="line" data-tooltip>51</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            name: current_ver.name,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__58">58</a></td>
+                          <td class="source"><div>                if (</div><div class="miss true" data-tooltip>referent_child.ok</div><div>) {</div></td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__86">86</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__52" class="hit">
                           <td class="line" data-tooltip>52</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">            when: Date.now()</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__59">59</a></td>
+                          <td class="hits" data-tooltip>5</td>
+                          <td class="source">                    child[field] &#x3D; referent_child.child.id;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__87">87</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__53" class="hit">
                           <td class="line" data-tooltip>53</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        }).save$();</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__60">60</a></td>
+                          <td class="source">                }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__88">88</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__54" class="hit">
                           <td class="line" data-tooltip>54</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        return {</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__62">62</a></td>
-                        </tr>            <tr id="dist/lib/make_child_msg.js__55" class="hit">
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">                else {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__89">89</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__55" class="miss">
                           <td class="line" data-tooltip>55</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            ok: true,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__63">63</a></td>
+                          <td class="source" data-tooltip>                    return seneca.fail(&#x27;referent-failed&#x27;, { field, referent });</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__90">90</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__56" class="hit">
                           <td class="line" data-tooltip>56</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            child: child,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__64">64</a></td>
+                          <td class="source">                }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__91">91</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__57" class="hit">
                           <td class="line" data-tooltip>57</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            parent: parent,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__65">65</a></td>
+                          <td class="source">            }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__92">92</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__58" class="hit">
                           <td class="line" data-tooltip>58</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            entdep: entdep,</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__66">66</a></td>
+                          <td class="source">        }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__93">93</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__59" class="hit">
                           <td class="line" data-tooltip>59</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        };</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__67">67</a></td>
+                          <td class="source">    }</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__94">94</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__60" class="hit">
                           <td class="line" data-tooltip>60</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">    });</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__68">68</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    child &#x3D; await child.save$();</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__97">97</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__61" class="hit">
                           <td class="line" data-tooltip>61</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source">}</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__68">68</a></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let current_ver &#x3D; await intern_1.default.ensure_version(seneca, parent);</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__99">99</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__62" class="hit">
                           <td class="line" data-tooltip>62</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">exports.make_child_msg &#x3D; make_child_msg;</td>
-                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__68">68</a></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    // console.log(&#x27;CV&#x27;, current_ver)</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__101">101</a></td>
                         </tr>            <tr id="dist/lib/make_child_msg.js__63" class="hit">
                           <td class="line" data-tooltip>63</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    // TODO: support who as per entity-history</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__103">103</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__64" class="hit">
+                          <td class="line" data-tooltip>64</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    let entdep &#x3D; await seneca.entity(&#x27;sys/entdep&#x27;).data$({</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__104">104</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__65" class="hit">
+                          <td class="line" data-tooltip>65</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        child_id: child.id,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__105">105</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__66" class="hit">
+                          <td class="line" data-tooltip>66</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        parent_id: parent.id,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__106">106</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__67" class="hit">
+                          <td class="line" data-tooltip>67</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        parent_ver_id: current_ver.ver_id,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__107">107</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__68" class="hit">
+                          <td class="line" data-tooltip>68</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        parent_rtag: current_ver.ent_rtag,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__108">108</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__69" class="hit">
+                          <td class="line" data-tooltip>69</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        base: current_ver.base,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__109">109</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__70" class="hit">
+                          <td class="line" data-tooltip>70</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        name: current_ver.name,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__110">110</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__71" class="hit">
+                          <td class="line" data-tooltip>71</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        when: Date.now()</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__111">111</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__72" class="hit">
+                          <td class="line" data-tooltip>72</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    }).save$();</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__112">112</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__73" class="hit">
+                          <td class="line" data-tooltip>73</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>11</td>
+                          <td class="source">    return {</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__114">114</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__74" class="hit">
+                          <td class="line" data-tooltip>74</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        ok: true,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__115">115</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__75" class="hit">
+                          <td class="line" data-tooltip>75</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        child: child,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__116">116</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__76" class="hit">
+                          <td class="line" data-tooltip>76</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        parent: parent,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__117">117</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__77" class="hit">
+                          <td class="line" data-tooltip>77</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        entdep: entdep,</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__118">118</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__78" class="hit">
+                          <td class="line" data-tooltip>78</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">    };</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__119">119</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__79" class="hit">
+                          <td class="line" data-tooltip>79</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">}</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__120">120</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__80" class="hit">
+                          <td class="line" data-tooltip>80</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">exports.make_child_msg &#x3D; make_child_msg;</td>
+                          <td class="original-line" data-tooltip="../../lib/make_child_msg.ts"><a href="#../../lib/make_child_msg.ts__120">120</a></td>
+                        </tr>            <tr id="dist/lib/make_child_msg.js__81" class="hit">
+                          <td class="line" data-tooltip>81</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">//# sourceMappingURL&#x3D;make_child_msg.js.map</td>

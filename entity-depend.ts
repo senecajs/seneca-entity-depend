@@ -15,7 +15,7 @@ module.exports.defaults = {}
 module.exports.errors = {}
 module.exports.doc = Doc
 
-function entity_depend(_options: any) {
+function entity_depend(this: any, _options: any) {
   const seneca = this
 
   seneca.fix('sys:entity,rig:depend').message('make:child', make_child_msg)

@@ -7,23 +7,37 @@ import intern from './intern'
 /* $lab:coverage:on$ */
 
 
-export async function make_child_msg(msg: {
+export async function make_child_msg(this: any, msg: {
   base: string,
   name: string,
   parent: any
-  replace: any
+  child?: {
+    id$: string
+  },
+  replace?: any
+  referents?: {
+    [field_name: string]: {
+      base: string,
+      name: string,
+      replace: any,
+      child?: {
+        id$: string
+      },
+    }
+  }
 }) {
   let seneca = this
 
   let parent_id =
     await intern.resolve_entity_id(seneca, msg, 'parent', { fail: true })
 
+  let parent_entity_spec = msg.parent.entity$ || { base$: msg.base, name$: msg.name }
+  let parent_entity = seneca.entity(parent_entity_spec)
+  let parent_entity2 = seneca.make(parent_entity_spec)
 
-  // console.log('PARENT', parent_id, msg)
+  // console.log('PARENT', parent_id, parent_entity_spec, parent_entity, parent_entity2, msg)
 
-  let parent_entity = msg.parent.entity$ || { base: msg.base, name: msg.name }
-
-  let parent = await seneca.entity(parent_entity).load$(parent_id)
+  let parent = await parent_entity.load$(parent_id)
 
   if (null == parent) {
     return seneca.fail('parent-not-found')
@@ -33,20 +47,58 @@ export async function make_child_msg(msg: {
   let child = parent.clone$()
   delete child.id
 
+  if (msg.child && null != msg.child.id$) {
+    child.id$ = msg.child.id$
+  }
+
+
   if (msg.replace) {
     Object.keys(msg.replace).forEach(fn => {
       let rval = msg.replace[fn]
+
+      // TODO: function won't work over network - provide an option for named
+      // functions defined in options
       child[fn] =
         'function' === typeof ('rval') ? rval(fn, child, parent, msg) :
           rval
     })
   }
 
+
+  // TODO: also copy referents
+  if (msg.referents) {
+    for (let [field, referent] of Object.entries(msg.referents)) {
+      if (null != child[field]) {
+        let refmsg = {
+          parent: child[field],
+          base: referent.base,
+          name: referent.name,
+          replace: referent.replace,
+          child: referent.child,
+        }
+        // console.log('REFERENT A', child, refmsg)
+
+        let referent_child =
+          await seneca.post('sys:entity,rig:depend,make:child', refmsg)
+
+        // console.log('REFERENT B', referent_child)
+
+        if (referent_child.ok) {
+          child[field] = referent_child.child.id
+        }
+        else {
+          return seneca.fail('referent-failed', { field, referent })
+        }
+      }
+    }
+  }
+
+
   child = await child.save$()
 
-  // TODO: replace with call to entity-history to handle missing versions etc
-  let current_ver = await seneca.entity('sys/entver').load$(parent_id)
-  // console.log('CURRENT VER', current_ver)
+  let current_ver: any = await intern.ensure_version(seneca, parent)
+
+  // console.log('CV', current_ver)
 
   // TODO: support who as per entity-history
   let entdep = await seneca.entity('sys/entdep').data$({
