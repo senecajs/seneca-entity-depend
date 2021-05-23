@@ -35,8 +35,6 @@ export async function make_child_msg(this: any, msg: {
   let parent_entity = seneca.entity(parent_entity_spec)
   let parent_entity2 = seneca.make(parent_entity_spec)
 
-  // console.log('PARENT', parent_id, parent_entity_spec, parent_entity, parent_entity2, msg)
-
   let parent = await parent_entity.load$(parent_id)
 
   if (null == parent) {
@@ -76,12 +74,8 @@ export async function make_child_msg(this: any, msg: {
           replace: referent.replace,
           child: referent.child,
         }
-        // console.log('REFERENT A', child, refmsg)
-
         let referent_child =
           await seneca.post('sys:entity,rig:depend,make:child', refmsg)
-
-        // console.log('REFERENT B', referent_child)
 
         if (referent_child.ok) {
           child[field] = referent_child.child.id
@@ -95,12 +89,10 @@ export async function make_child_msg(this: any, msg: {
 
 
   child = await child.save$()
-  console.log('MAKE CHILD', child, parent)
 
   
   let current_ver: any = await intern.ensure_version(seneca, parent)
 
-  // console.log('CV', current_ver)
 
   // TODO: support who as per entity-history
   let entdep = await seneca.entity('sys/entdep').data$({

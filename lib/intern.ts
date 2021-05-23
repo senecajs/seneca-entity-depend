@@ -88,7 +88,6 @@ const intern = {
       }
     }
     let current_ver = await seneca.post(cvmsg)
-    console.log('CURRENT VER A', cvmsg, current_ver)
 
     // If no current_ver save parent to get it
     if (!current_ver.ok) {
@@ -97,13 +96,8 @@ const intern = {
       parent = parent.data$({
         custom$: { history: { wait: true } }
       })
-      console.log('CURRENT VER B1', cvmsg, parent)
       parent = await parent.save$()
-      //parent = await parent.data$({history_wait:true}).save$()
-      console.log('CURRENT VER B2', cvmsg, parent)
-
       current_ver = await seneca.post(cvmsg)
-      console.log('CURRENT VER C', cvmsg, current_ver)
     }
 
 

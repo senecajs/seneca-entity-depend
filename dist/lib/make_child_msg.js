@@ -14,7 +14,6 @@ async function make_child_msg(msg) {
     let parent_entity_spec = msg.parent.entity$ || { base$: msg.base, name$: msg.name };
     let parent_entity = seneca.entity(parent_entity_spec);
     let parent_entity2 = seneca.make(parent_entity_spec);
-    // console.log('PARENT', parent_id, parent_entity_spec, parent_entity, parent_entity2, msg)
     let parent = await parent_entity.load$(parent_id);
     if (null == parent) {
         return seneca.fail('parent-not-found');
@@ -45,9 +44,7 @@ async function make_child_msg(msg) {
                     replace: referent.replace,
                     child: referent.child,
                 };
-                // console.log('REFERENT A', child, refmsg)
                 let referent_child = await seneca.post('sys:entity,rig:depend,make:child', refmsg);
-                // console.log('REFERENT B', referent_child)
                 if (referent_child.ok) {
                     child[field] = referent_child.child.id;
                 }
@@ -58,9 +55,7 @@ async function make_child_msg(msg) {
         }
     }
     child = await child.save$();
-    console.log('MAKE CHILD', child, parent);
     let current_ver = await intern_1.default.ensure_version(seneca, parent);
-    // console.log('CV', current_ver)
     // TODO: support who as per entity-history
     let entdep = await seneca.entity('sys/entdep').data$({
         child_id: child.id,
