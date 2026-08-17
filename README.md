@@ -1,25 +1,57 @@
-# seneca-entity-depend
-Handle dependency relationships on entity verison
+![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
+> A [Seneca.js](http://senecajs.org) plugin
 
+# @seneca/entity-depend
 
-[![npm version](https://badge.fury.io/js/%40seneca%2Fentity-depend.svg)](https://badge.fury.io/js/%40seneca%2Fentity-depend)
-[!![Build](https://github.com/senecajs/seneca-entity-depend/workflows/build/badge.svg)](https://github.com/senecajs/seneca-entity-depend/actions?query=workflow%3Abuild)
+[![npm version](https://img.shields.io/npm/v/@seneca/entity-depend.svg)](https://npmjs.com/package/@seneca/entity-depend)
+[![build](https://github.com/senecajs/seneca-entity-depend/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-entity-depend/actions/workflows/build.yml)
+[![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-entity-depend/badge.svg)](https://snyk.io/test/github/senecajs/seneca-entity-depend)
 [![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-entity-depend/badge.svg?branch=main)](https://coveralls.io/github/senecajs/seneca-entity-depend?branch=main)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0b1990c4264d66b01c50/maintainability)](https://codeclimate.com/github/senecajs/seneca-entity-depend/maintainability)
 [![DeepScan grade](https://deepscan.io/api/teams/5016/projects/14231/branches/259194/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=14231&bid=259194)
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
 
+## Install
 
-## NOTE
+```sh
+npm install @seneca/entity-depend
+```
+
+## Quick Example
+
+```js
+require('seneca')()
+  .use('@seneca/entity-depend')
+```
+
+## More Examples
+
+See [test/](test/) for more usage examples.
+
+## Motivation
+
+Handle dependency relationships on entity versions in Seneca.
+
+## Support
+
+If you're using this module and need help, you can:
+
+- Post a [github issue](https://github.com/senecajs/seneca-entity-depend/issues)
+- Tweet to [@senecajs](http://twitter.com/senecajs)
+- Ask on the [Gitter](https://gitter.im/senecajs/seneca)
+
+## API
+
+### NOTE
 
 * Only works on _@seneca/entity-history_ enabled ents (as per `ent` option of _@seneca/entity-history_).
 
-
-## Message Tutorial
+### Message Tutorial
 
 These can be run interactively with [seneca-repl](senecajs/seneca-repl. 
 To use in code, call with `let out = await seneca.post(msg)`.
-
 
 #### Create some entities
 ```css
@@ -69,7 +101,6 @@ Keep child's conflicting changes:
 Parent to child relationship is one-to-many. Thus `pull:child` needs both 
 `child_id` and `parent_id`.
 
-
 #### Generate a pull request
 
 ```css
@@ -106,8 +137,7 @@ Pulls all changes from specified version. NOTE: uses _entity-history_ directly
     parent_ver_id:`$.h0[0].id` => foo1c1=out
 ```
 
-
-## Implementation
+### Implementation
 
 ### Entities
 
@@ -115,12 +145,21 @@ Pulls all changes from specified version. NOTE: uses _entity-history_ directly
 * _sys/pullhist_: Pull history.
 * _sys/pullreq_: Pull requests.
 
-
-## TODO:
+### TODO
 
 * Patterns should support `ent` param as well as top level _base,name,id_.
 * Support `make:parent`
 
+## Contributing
 
+The [Senecajs org](https://github.com/senecajs/) encourages open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
 
+### Running tests
 
+```sh
+npm run test
+```
+
+## Background
+
+Works with [seneca-entity](https://github.com/senecajs/seneca-entity) to manage entity dependencies.
